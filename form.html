@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>kaaton</title>
+    <link rel="shortcut icon" href="img/kaaton-icon.ico">
+    <!-- ==== STYLE.CSS ==== -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <!-- ====  REMIXICON CDN ==== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ==== HEADER ==== -->
+    <header class="container header">
+        <!-- ==== NAVBAR ==== -->
+        <nav class="nav">
+          <div class="logo">
+            <h2>Kaaton.</h2>
+          </div>
+  
+          <div class="nav_menu" id="nav_menu">
+            <button class="close_btn" id="close_btn">
+              <i class="ri-close-fill"></i>
+            </button>
+  
+            <ul class="nav_menu_list">
+              <li class="nav_menu_item">
+                <a href="https://docs.kaaton.com" class="nav_menu_link">documentation</a>
+              </li>
+              <li class="nav_menu_item">
+                <a href="form.html" class="nav_menu_link">connect database</a>
+              </li>
+              <li class="nav_menu_item">
+                <a href="#" class="nav_menu_link">contact us</a>
+              </li>
+              <li class="nav_menu_item">
+                <a href="#" class="nav_menu_link">get started</a>
+              </li>
+            </ul>
+          </div>
+  
+          <button class="toggle_btn" id="toggle_btn">
+            <i class="ri-menu-line"></i>
+          </button>
+        </nav>
+      </header>
+      <section class="form-container">
+          <div class="ih">
+        <div class="title">Connection Details</div>
+        <div class="learn-more">To learn more about connecting your database, <a href="https://docs.kaaton.com">check out documentation.</a> </div>
+        <div class="content">
+          <form action="#">
+            <div class="user-details">
+              <div class="input-box">
+                <span class="details">Database Type</span>
+                <!-- <input type="text" placeholder="e.g root" required> -->
+                <select id="Database type" name="DbType">
+                    <option value="volvo">MySql</option>
+                    <option value="saab">Microsoft Sql</option>
+                  </select>
+              </div>
+              <div class="input-box">
+                <span class="details">Database Name</span>
+                <input type="text" placeholder="Enter your username" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Host</span>
+                <input type="text" placeholder="3306" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Port Number</span>
+                <input type="number" placeholder="3306" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Database User</span>
+                <input type="text" placeholder="Enter your email" required>
+              </div>
+              <div class="input-box">
+                <span class="details">Password</span>
+                <input type="password" placeholder="Enter your number" required>
+              </div>
+            </div>
+            <div class="button">
+              <input type="submit" value="Submit">
+            </div>
+          </form>
+        </div>
+    </div>
+      </section>
+
+
+      <!-- <div class="form-container">
+        <div class="title">Connection Headers</div>
+        <div class="content">
+          <form action="#">
+          
+        </div>
+      </div> -->
+  
+  
+      <!-- ==== ANIMATE ON SCROLL JS CDN -->
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+      <!-- ==== GSAP CDN ==== -->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+      <!-- ==== SCRIPT.JS ==== -->
+      <script src="./script.js" defer></script>
+        <footer>
+
+        <span class="copy">&copy;2020. All Rights Reserverd </span> 
+         <!-- <span class = "space"> </span> -->
+         <span class="coffee"><a href="#">Buy me a coffee</a> | sponsored by BrownJava</span>
+      </footer>
+      </body>
+      </html>
